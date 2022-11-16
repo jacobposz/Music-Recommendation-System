@@ -120,10 +120,25 @@ jazz guitar vs guitar = .893
 
 
 
+## Critical Analysis
+### What is the impact of this project?
+
+### What does it reveal or suggest
+
+### What is the next step?
 
 
 
+
+
+
+
+## Code demonstration video
 
 ## Video Recording
+
+## Resource Links
+
+
 
 
