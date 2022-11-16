@@ -99,7 +99,7 @@
 - the problem now, is that the recommendations are formed by just one tree 
 
 ![image](https://user-images.githubusercontent.com/89123268/202076341-2eb8ede2-84d0-487f-aaca-bc29de838aa3.png)
-- for example, all 3 of these could the trees that we get at the end... however, its always better to have multiple trees so that, by random chance, we won't be missing certain points
+- for example, all 3 of these could be the trees that we get at the end in 3 separate cases... however, its always better to have multiple trees so that, by random chance, we won't be missing certain points
 - the more trees we build and take into consideration when making the decision for determining nearest neighbors, it becomes much more concrete
 - For example, lets say that the red "x" is the song that we put in -> we get the set of points in the purple region for nearest neighbors
 - then with these same set of points, we're going to run ANNOY again but this time we get random splits going in different directions then end up with the set of points in the yellow region
