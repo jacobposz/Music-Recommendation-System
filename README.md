@@ -111,6 +111,7 @@
 - now since there are only 18 points, we can actually compute raw distances for every single one of the 18 points from the query vector (aka, the song we want recommendations for)
 - once we do this, we can sort them in a ranked order of nearest neighbors/nearest distances:
 - we then find the nearest neighbors for all 18 points from the query point (inputted song) -> we can then eliminate the 8 furthest, giving us the closest 10 songs:
+
 ![image](https://user-images.githubusercontent.com/89123268/202080466-b605f10e-ea40-4dbd-a117-83274367e51e.png)
 
 
