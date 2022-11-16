@@ -26,3 +26,5 @@
 - feature lists: every part of that audio is now encoded into a 128 bit feature string
 - for example, we have a 10 second piece of audio; we are chunking that 10 second piece of audio into 10 chunks of 1 second each and each of those seconds are encoded into an array of 128 numbers (also known as a byte array) -> this is repeated for each second of audio so we will have 10 lists at the end
 - **This is our entire dataset -> This is repeated 12,228 times (2.4 GB)**
+- all of these files are stored in the form of tf records -> each of these records have exactly all of this information for 12,228 examples
+- when you look at raw music data, 
