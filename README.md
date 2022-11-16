@@ -116,29 +116,12 @@ jazz guitar vs guitar = .893
 ## Building a Recommender with ANNOY (Code Demonstration Video)
 **Music Recommendation System (ANNOY) Code Demonstration Video link:** https://www.youtube.com/watch?v=Emuhan6UxJs
 
-
-- the objective is to get the top 10 recommendations for a piece of music
-- to run this notebook, we need the music_set.json file from the AudioSet processing.ipynb notebook 
-- first, we have to install 'annoy'
-- We then need to read the class labels from the csv file containing all of the categories and classes
-- Once the json file is read, we take the length of the dataset (2000 examples); we have 2000 pieces of music to play with
-- We want to create an ANNOY index where we now need to pass in the number of dimensions of each of our samples (1280) -> then for every single piece of music, we want to add it to the index (the samples we want to use to find the nearest neighbors of)
-- for every single one of these songs, we want to get the corresponding data which will be the actual vector of 1280 dimensions -> we then add that vector as an index
-- Next we want to build it -> build will create 50 binary decision trees -> for more accuracy, we can increase the amount of trees
-- we can then save the nearest neighbors in a graph in a .ann file
-- When we want to actually get the nearests neighbors, we index every item -> lets say we want to get the nearest neighbors for item 193 in the index that we built -> we want to get the **10** nearest neighbors for this index
-- We've printed out the entire music dataset within that index so we can see the index and the labels/kind of music given to it -> 193 is 'opera music'
-- now we have the nns_index where the nearest neighbors will be stored -> we will then print out every nearest neighbor
-- the first nearest neighbor is '193' which is obvious becuase its the same music that we inputted into the dataset
-- the second nearest neighbor is '811' , 'singing,' 'choir,' 'music,' 'vocal music,' 'acapella,' 'song,' b'k9TtEo5P2Zc', 80.0, 90.0 -> the first number is the index, 'singing,' 'choir,' 'music,' 'vocal music,' 'acapella,' 'song,' are the set of tags given to the piece of music, b'k9TtEo5P2Zc' is the YouTube URL that you can use to Google it, and 80.0, 90.0 are the starting and ending times of the video in seconds
-- As we can hear in the videos, both songs are pretty close to each other
-
-
-
 ## Critical Analysis
 ### What is the impact of this project?
 
+
 ### What does it reveal or suggest
+
 
 ### What is the next step?
 
