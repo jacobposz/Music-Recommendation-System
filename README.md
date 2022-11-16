@@ -88,6 +88,7 @@
 
 - As we can see, there are "xs" very close to the x we chose, however, since they aren't in the same region as the x we chose, they will not be recommended
 - this all happened arbitrarily because of a random split -> obviously, this isn't good, so how can we fix this? -> by traversing both sides of the tree:
+
 ![image](https://user-images.githubusercontent.com/89123268/202074240-2bfbc062-96ee-43e5-8b3e-6cdbae0cb7ea.png)
 
 - now we have 5 other regions that could potentially be our nearest neighbors -> so if we highlight these 5 regions in the actual space, it looks like this:
