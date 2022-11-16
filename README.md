@@ -50,3 +50,6 @@
 
 - as we can see, the jazz guitar and regular guitar have a cosign similarity of .89 which is super high
 - on the other hand, guitar and train have a cosign similarity of .69 which is really low
+
+
+- we are now able to have a set of these vectors which we can pass into the recommendation engine
