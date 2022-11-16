@@ -121,16 +121,10 @@ jazz guitar vs guitar = .893
 The impact of this project is that it has shown me how helpful and widely used ANNOY really is. Annoy is in a league of its own when it comes to music recommendation engines: it has the ability to use static files as indexes. In particular, this means you can share index across processes. Annoy also decouples creating indexes from loading them, so you can pass around indexes as files and map them into memory quickly. Moreover, Annoy tries to minimize memory footprint to keep indexes small.
 
 ### What does it reveal or suggest
-Based on my understanding and research, ANNOY was created by Erik Bernhardsson (an ex-Spotify employee) and is still used by Spotify today. That suggests that it is extremely effiecient and extremely good at what it does. I know this because I am a Spotify user and can attest to their awesome song recommendations, based on my listening history. Moreover, it suggests that
+Based on my understanding and research, ANNOY was created by Erik Bernhardsson (an ex-Spotify employee) and is still used by Spotify today. That suggests that it is extremely effiecient and extremely good at what it does. I know this because I am a Spotify user and can attest to their awesome song recommendations, based on my listening history. Moreover, it reveals that ANNOY is extremely fast as well, given that there are millions of tracks on Spotify in a high-dimensional space.
 
 ### What is the next step?
-
-
-
-
-
-
-
+The next step for ANNOY would be to continue improving it. Although it is already extremely fast and useful, there are almost 100,000 new songs uploaded to Spotify per day so memeory usage must be a primary concern for Spotify and I'm sure they are adjusting ANNOY to deal with the high traffic of new songs.
 
 ## Video Recording
 **Music Recommendation System (ANNOY) Overview link:** https://www.youtube.com/watch?v=VjCjCorFifY
