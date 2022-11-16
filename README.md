@@ -114,7 +114,7 @@ jazz guitar vs guitar = .893
 ![image](https://user-images.githubusercontent.com/89123268/202080466-b605f10e-ea40-4dbd-a117-83274367e51e.png)
 
 ## Building a Recommender with ANNOY (Code Demonstration Video)
-- Code Demonstration Video link: https://www.youtube.com/watch?v=Emuhan6UxJs
+- Music Recommendation System (ANNOY) Code Demonstration Video link: https://www.youtube.com/watch?v=Emuhan6UxJs
 
 
 - the objective is to get the top 10 recommendations for a piece of music
@@ -150,6 +150,7 @@ jazz guitar vs guitar = .893
 
 
 ## Video Recording
+- Music Recommendation System (ANNOY) Overview link: https://www.youtube.com/watch?v=VjCjCorFifY
 
 ## Resource Links
 
