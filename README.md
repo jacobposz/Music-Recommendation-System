@@ -112,3 +112,15 @@ jazz guitar vs guitar = .893
 
 
 
+
+
+
+
+
+
+
+
+
+## Video Recording
+
+
