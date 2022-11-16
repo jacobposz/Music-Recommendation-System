@@ -15,7 +15,7 @@ This repo will go over the entire recommendation system, break down each part, a
 - The vector is then passed into a recommendation engine: also know as ANNOY: an approximate nearest neighbors method implementated by Erik Bernhardsson, who worked at Spotify; it takes the given vector then spits out neighboring vectors which can then be translated back into music
 - The recommendation engine will then reccomend the closest values to the original piece of audio/song
 
-## AudioSet Dataset
+## Audio Dataset
 ![image](https://user-images.githubusercontent.com/89123268/202083469-dd7ba0ad-3f31-4c5f-9c2c-086780705f61.png)
 
 ![image](https://user-images.githubusercontent.com/89123268/202052181-cc1138f3-4770-40d7-98c9-50edfc999e1b.png)
