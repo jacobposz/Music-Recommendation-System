@@ -14,7 +14,7 @@
 - MAX audio embedding generator (from IBM): tool that helps convert raw .WAV files into a byte strings/vectors
 - ANNOY: an approximate nearest neighbors implementation by Erik Bernhardsson, who works at Spotify; it takes the given vector then spits out neighboring vectors which can then be tranlated back into music (recommended music based on the input)
 
-## AudioSet
+## AudioSet Dataset
 ![image](https://user-images.githubusercontent.com/89123268/202052181-cc1138f3-4770-40d7-98c9-50edfc999e1b.png)
 
 - set of YouTube video IDs
@@ -28,3 +28,5 @@
 - **This is our entire dataset -> This is repeated 12,228 times (2.4 GB)**
 - all of these files are stored in the form of tf records -> each of these records have exactly all of this information for 12,228 examples
 - when you look at raw WAV music data, they're typically stored in kilohertz... for example a CD has 44.1 kilohertz which is equivalent to 44.1 thousand numbers being used to represent one second of data -> this is a lot of information -> that's why the output of 128 features is a lot less and also represents a lot more information -> this is the embedding -> the embeddings are pre-genertaed by the MAX audio embedding generator
+
+
