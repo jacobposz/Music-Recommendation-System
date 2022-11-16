@@ -69,7 +69,10 @@
 - Until we end up with something that looks like this:
 ![image](https://user-images.githubusercontent.com/89123268/202069805-716128f9-d297-42bc-82b9-6104d81e8d05.png)
 
-- this is a partition of an embedding space that you can also format as a binary decision tree
-- the top point would be the start where all of your poins are in one embedding space then every node is where the space was split
-- we keep doing this until we end up at the circular leaf nodes which correspond to the sections below:
+- this is a partition of an embedding space that you can also format as a binary decision tree, as shown below:
+![image](https://user-images.githubusercontent.com/89123268/202073125-34704020-7803-40ef-bb39-89eb29ebf0f7.png)
 
+- the top point would be the start where all of your poins are in one embedding space then every node is where the space was split
+- we keep doing this until we end up at the circular leaf nodes which correspond to the sections above
+
+- now, lets say that you want find the nearest neighbors of a particular point... so what do you do?
