@@ -26,8 +26,8 @@
 
 - This is going to read a wav file and get the corresponding embeddings
 - When it generates an embedding, it's going to take the wav file and output it to a json file
-- Let's say we extract the embedding which is a list of lists where each list within that list is 128 characters of bytes -> we want the audio length to be cut at 10 seconds -> we want to make sure that every audio clip is the same size -> in this case, each list of lists will be 10x128 
-- We would then want to flatten it so that we have a single vector of 1280 dimensions that represents a WAV file
+- Let's say we extract the embedding -> we want the audio length to be cut at 10 seconds -> we want to make sure that every audio clip is the same size -> in this case, each embedding will be 10x128 
+- We would then want to flatten it so that we have a single vector of 1280 dimensions that represents a single WAV file
 - Now that its a much more compressed representation, we can find the cosign similarity between 2 sounds -> if the cosign similarity is higher, that means the 2 vectors/sounds are more "similar"
 - 2 examples given in the code were:
 birds2 vs birds2 = .906
