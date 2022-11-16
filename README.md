@@ -14,3 +14,8 @@
 - MAX audio embedding generator (from IBM): tool that helps convert raw .WAV files into a byte strings/vectors
 - ANNOY: an approximate nearest neighbors implementation by Erik Bernhardsson, who works at Spotify; it takes the given vector then spits out neighboring vectors which can then be tranlated back into music (recommended music based on the input)
 
+## AudioSet
+![image](https://user-images.githubusercontent.com/89123268/202052181-cc1138f3-4770-40d7-98c9-50edfc999e1b.png)
+
+- set of YouTube video IDs
+- huge file, consisting of json like information
