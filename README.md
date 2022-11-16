@@ -9,7 +9,7 @@
 - The vector is then passed into a recommendation engine
 - The recommendation engine will then reccomend the closest values to the original piece of audio/song
 
-*** in order to build the above components, there are 3 major resources used:
+**in order to build the above components, there are 3 major resources used:**
 - audioset dataset: this includes YouTube videos, mp3s, mp4s, etc. 
 - MAX audio embedding generator (from IBM): tool that helps convert raw .WAV files into a byte strings/vectors
 - ANNOY: an approximate nearest neighbors implementation by Erik Bernhardsson, who works at Spotify; it takes the given vector then spits out neighboring vectors which can then be tranlated back into music (recommended music based on the input)
