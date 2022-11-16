@@ -118,10 +118,10 @@ jazz guitar vs guitar = .893
 
 ## Critical Analysis
 ### What is the impact of this project?
-
+The impact of this project is that it has shown me how helpful and widely used ANNOY really is. Annoy is in a league of its own when it comes to music recommendation engines: it has the ability to use static files as indexes. In particular, this means you can share index across processes. Annoy also decouples creating indexes from loading them, so you can pass around indexes as files and map them into memory quickly. Moreover, Annoy tries to minimize memory footprint to keep indexes small.
 
 ### What does it reveal or suggest
-
+Based on my understanding and research, ANNOY was created by Erik Bernhardsson (an ex-Spotify employee) and is still used by Spotify today. That suggests that it is extremely effiecient and extremely good at what it does. I know this because I am a Spotify user and can attest to their awesome song recommendations, based on my listening history. Moreover, it suggests that
 
 ### What is the next step?
 
