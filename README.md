@@ -159,7 +159,4 @@ jazz guitar vs guitar = .893
 4) YouTube video of ANNOY being exlained in more detail by Erik Bernhardsson: https://www.youtube.com/watch?v=QkCCyLW0ehU
 5) AudioSet download page: https://research.google.com/audioset/download.html
 6) MAX Audio Embedding Generator github repo: https://github.com/IBM/MAX-Audio-Embedding-Generator
-7) 
-
-
-
+7) Kaggle link of Music Recommendation System using K-Means: https://www.kaggle.com/general/214653
