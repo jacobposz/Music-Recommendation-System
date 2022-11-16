@@ -67,7 +67,7 @@
 ![image](https://user-images.githubusercontent.com/89123268/202069723-489a5af0-9372-40de-8254-39fbb9ac2049.png)
 
 - Until we end up with something that looks like this:
-- ![image](https://user-images.githubusercontent.com/89123268/202069805-716128f9-d297-42bc-82b9-6104d81e8d05.png)
+![image](https://user-images.githubusercontent.com/89123268/202069805-716128f9-d297-42bc-82b9-6104d81e8d05.png)
 
 
 
