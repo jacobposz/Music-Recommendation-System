@@ -1,5 +1,8 @@
 # Music Recommendation System 
 
+## Problem
+Lets say we want to build a recommendation system for music based on a user's input... How do we do this? Where would we even start?
+
 ## Overview
 
 ![image](https://user-images.githubusercontent.com/89123268/202051443-6bc35412-03af-4bdf-b09e-82d9c2a0a156.png)
