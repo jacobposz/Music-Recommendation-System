@@ -51,5 +51,25 @@
 - before getting into the next notebook
 - ANNOY uses approximate nearest neighbors for recommendations -> much faster than trying to do a brute force linear scan
 - This slide deck was made by the creator of ANNOY, Erik Bernhardsson:
+
+
 ![image](https://user-images.githubusercontent.com/89123268/202068571-592edd51-7d27-4f0c-90c2-9837dfda3464.png)
 - lets say that each x in the embedding space is a song
+
+![image](https://user-images.githubusercontent.com/89123268/202068961-11dd1a77-a817-4ec9-9e75-8ed71b90198a.png)
+- now lets pick any random 2 points in our embedding then draw a line between them and then split that line with a perpendicular line
+- now we have 2 separate halves
+
+![image](https://user-images.githubusercontent.com/89123268/202069523-9c58c96e-bb11-4a13-9aa1-d98eaea02ad3.png)
+- next, lets choose 2 points above the perpendicular line and 2 point below the perpendicular line then split both of them again with perpendicular lines
+
+- lets do this again and again:
+![image](https://user-images.githubusercontent.com/89123268/202069723-489a5af0-9372-40de-8254-39fbb9ac2049.png)
+
+- Until we end up with something that looks like this:
+- ![image](https://user-images.githubusercontent.com/89123268/202069805-716128f9-d297-42bc-82b9-6104d81e8d05.png)
+
+
+
+
+- 
