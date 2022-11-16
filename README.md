@@ -103,15 +103,19 @@
 - For example, lets say that the red "x" is the song that we put in -> we get the set of points in the purple region for nearest neighbors
 - then with these same set of points, we're going to run ANNOY again but this time we get random splits going in different directions then end up with the set of points in the yellow region
 - Lastly, we do it a third time and yet again, we get different splits and end up with the set of points in the red region
-- so, lets say that we wanted to recommend 10 songs for a single song that a user inputs -> in our example, that would mean that there are 10 points/songs in each of the purple, yellow and red regions... however, some of the points/songs are overlapping -> so, what do we do?
+- so, lets say that we wanted to recommend 10 songs for a single song that a user inputs -> in our example, that would mean that there are 10 points/songs in each of the purple, yellow and red regions, giving us 30 total points/songs... however, some of the points/songs are overlapping -> so, what do we do?
 
 ![image](https://user-images.githubusercontent.com/89123268/202077958-ab255c80-0436-40df-833d-58f9108783ce.png)
-- search all trees until we have k items -> in this case, k is 10 items -> every tree that we construct will output 10 items -> so if we construct 50 tress, we will end up with 500 items 
-- Lets say that out of the 500 items, 400 of them are duplicates -> now, we take the union and remove these duplicates -> we now only have 100 items
-- now since there are only 100 points, we can actually compute raw distances for every single one of the 100 points from the query vector (aka, the music we want recommendations for)
+- Lets say that out of the 30 items/songs, 12 of them are duplicates -> now, we take the union and remove these duplicates -> we now only have 18 items/songs
+- now since there are only 18 points, we can actually compute raw distances for every single one of the 18 points from the query vector (aka, the song we want recommendations for)
 - once we do this, we can sort them in a ranked order of nearest neighbors/nearest distances:
 
 ![image](https://user-images.githubusercontent.com/89123268/202078586-df6fc1f6-adf3-497e-9624-111492ab0096.png)
 
-- so in this case, we have 3 decision trees
+- we then we get the union (18 total songs) of all leaves:
+![image](https://user-images.githubusercontent.com/89123268/202079382-1324b485-b7f5-40ff-9a0a-8ce1f1c79761.png)
+
+- we then find the nearest neighbors for all 18 points from the query point (inputted song) -> we can then rank them to find the nearest 10 neighbors, eliminating the 8 furthest
+
+
 
