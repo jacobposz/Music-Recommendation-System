@@ -43,3 +43,7 @@
 - lets test out a few values:
 - #birds2 vs birds1 = .906
 - #jazz guitar vs guitar = .893
+- both have high cosign scores which makes sense because they are different types of the same thing
+
+- now, lets print all of these into a cosign similarity matrix:
+![image](https://user-images.githubusercontent.com/89123268/202065065-43a5bcde-d6b4-409a-a0d2-a77a81ab837d.png)
