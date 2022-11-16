@@ -106,7 +106,7 @@
 - Lastly, we do it a third time and yet again, we get different splits and end up with the set of points in the red region
 - so, lets say that we wanted to recommend 10 songs for a single song that a user inputs -> in our example, that would mean that there are 10 points/songs in each of the purple, yellow and red regions, giving us 30 total points/songs... however, some of the points/songs are overlapping -> so, what do we do?
 
-![image](https://user-images.githubusercontent.com/89123268/202077958-ab255c80-0436-40df-833d-58f9108783ce.png)
+![image](https://user-images.githubusercontent.com/89123268/202080143-cbdc1dab-ec19-4f6d-9b4c-45bab177d592.png)
 - Lets say that out of the 30 items/songs, 12 of them are duplicates -> now, we take the union and remove these duplicates -> we now only have 18 items/songs
 - now since there are only 18 points, we can actually compute raw distances for every single one of the 18 points from the query vector (aka, the song we want recommendations for)
 - once we do this, we can sort them in a ranked order of nearest neighbors/nearest distances:
