@@ -128,6 +128,7 @@ jazz guitar vs guitar = .893
 - now we have the nns_index where the nearest neighbors will be stored -> we will then print out every nearest neighbor
 - the first nearest neighbor is '193' which is obvious becuase its the same music that we inputted into the dataset
 - the second nearest neighbor is '811' , 'singing,' 'choir,' 'music,' 'vocal music,' 'acapella,' 'song,' b'k9TtEo5P2Zc', 80.0, 90.0 -> the first number is the index, 'singing,' 'choir,' 'music,' 'vocal music,' 'acapella,' 'song,' are the set of tags given to the piece of music, b'k9TtEo5P2Zc' is the YouTube URL that you can use to Google it, and 80.0, 90.0 are the starting and ending times of the video in seconds
+- As we can hear in the videos, both songs are pretty close to each other
 
 
 
