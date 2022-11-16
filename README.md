@@ -1,7 +1,7 @@
 # Music Recommendation System 
 
 ## Problem
-Lets say we want to build a recommendation system for music based on a user's input... How do we do this? Where would we even start?
+Lets say we want to build a recommendation system for music based on a user's input... How do we do this? Where would we even start? Luckily, Erik Bernhardsson, a former Spotify employee, has already implemented a music recommendation system that uses a
 
 ## Overview
 
