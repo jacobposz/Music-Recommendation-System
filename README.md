@@ -1,4 +1,4 @@
-# Music Recommendation System using Convolutional Recurrent Neural Networks
+# Music Recommendation System 
 
 ## Overview
 
