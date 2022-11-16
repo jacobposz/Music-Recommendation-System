@@ -110,12 +110,6 @@
 - Lets say that out of the 30 items/songs, 12 of them are duplicates -> now, we take the union and remove these duplicates -> we now only have 18 items/songs
 - now since there are only 18 points, we can actually compute raw distances for every single one of the 18 points from the query vector (aka, the song we want recommendations for)
 - once we do this, we can sort them in a ranked order of nearest neighbors/nearest distances:
-
-![image](https://user-images.githubusercontent.com/89123268/202078586-df6fc1f6-adf3-497e-9624-111492ab0096.png)
-
-- we then we get the union (18 total songs) of all leaves:
-![image](https://user-images.githubusercontent.com/89123268/202079382-1324b485-b7f5-40ff-9a0a-8ce1f1c79761.png)
-
 - we then find the nearest neighbors for all 18 points from the query point (inputted song) -> we can then rank them to find the nearest 10 neighbors, eliminating the 8 furthest
 
 
