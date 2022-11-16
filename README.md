@@ -153,7 +153,8 @@ jazz guitar vs guitar = .893
 **Music Recommendation System (ANNOY) Overview link:** https://www.youtube.com/watch?v=VjCjCorFifY
 
 ## Resource Links
-
+- Article from ScienceDirect about Music Recommender System Based on Genre using Convolutional Neural Networks: https://www.sciencedirect.com/science/article/pii/S1877050919310646#:~:text=By%20using%20music%20recommender%20system,that%20has%20been%20heard%20previously.
+- 
 
 
 
