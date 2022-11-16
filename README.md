@@ -83,6 +83,7 @@
 ![image](https://user-images.githubusercontent.com/89123268/202073651-27605448-2eba-4923-8150-efe054d6b8ba.png)
 
 - Yes and no
+
 ![image](https://user-images.githubusercontent.com/89123268/202073941-ddf8a038-ed62-4de5-bf1b-bb686914015b.png)
 
 - As we can see, there are "xs" very close to the x we chose, however, since they aren't in the same region as the x we chose, they will not be recommended
