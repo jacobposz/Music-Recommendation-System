@@ -23,7 +23,7 @@
 - when you look at raw WAV music data, they're typically stored in kilohertz... for example a CD has 44.1 kilohertz which is equivalent to 44.1 thousand numbers being used to represent one second of data -> this is a lot of information -> that's why the output of 128 features is a lot less and also represents a lot more information -> this is the embedding -> the embeddings are pre-genertaed by the MAX audio embedding generator
 
 ## Generate EMbedding from WAV
-- This reads a wav file and gets the corresponding embeddings
+- This is going to read a wav file and get the corresponding embeddings
 - We're going to fetch all of the wav files in demo assets (all the stuff in this repository; all of these wav files)
 - The goal here is to convert these wav files into the embeddings using the max audio embedding generator
 - So for every single WAV file, we're going to execute this curl request -> I'm passing the audio wav file to the URL (right here) -> its then going to run the prediction model through our embedding and when it generates an embedding, it's going to output it to a json file
