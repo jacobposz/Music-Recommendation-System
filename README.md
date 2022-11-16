@@ -56,11 +56,11 @@
 - lets say that each x in the embedding space is a song
 
 ![image](https://user-images.githubusercontent.com/89123268/202068961-11dd1a77-a817-4ec9-9e75-8ed71b90198a.png)
-- now lets pick any random 2 points in our embedding then draw a line between them and then split that line with a perpendicular line
+- now lets pick any random 2 songs in our embedding then draw a line between them and then split that line with a perpendicular line
 - now we have 2 separate halves
 
 ![image](https://user-images.githubusercontent.com/89123268/202069523-9c58c96e-bb11-4a13-9aa1-d98eaea02ad3.png)
-- next, lets choose 2 points above the perpendicular line and 2 point below the perpendicular line then split both of them again with perpendicular lines
+- next, lets choose 2 songs above the perpendicular line and 2 songs below the perpendicular line then split both of them again with perpendicular lines
 
 - lets do this again and again:
 ![image](https://user-images.githubusercontent.com/89123268/202069723-489a5af0-9372-40de-8254-39fbb9ac2049.png)
@@ -71,17 +71,17 @@
 - this is a partition of an embedding space that you can also format as a binary decision tree, as shown below:
 ![image](https://user-images.githubusercontent.com/89123268/202073125-34704020-7803-40ef-bb39-89eb29ebf0f7.png)
 
-- the top point would be the start where all of your poins are in one embedding space then every node is where the space was split
+- the top point would be the start where all of the songs are in one embedding space then every node is where the space was split
 - we keep doing this until we end up at the circular leaf nodes which correspond to blocked off sections in the previous graph
 
-- now, lets say that you want find the nearest neighbors of a particular point... so what do you do?
-- lets say that the actual point in the embedding space lies somewhere here (in the white "x"):
+- now, lets say that you want find the nearest neighbors of a particular song... so what do you do?
+- lets say that the actual song in the embedding space lies somewhere here (in the white "x"):
 ![image](https://user-images.githubusercontent.com/89123268/202073423-9ae54fb4-9a37-4c16-a22d-c5779a9cbeb4.png)
 
 - so, should we just traverse the tree which corresponds to that particular region/leaf in the decision tree?
 ![image](https://user-images.githubusercontent.com/89123268/202073651-27605448-2eba-4923-8150-efe054d6b8ba.png)
 
-- Yes and no
+- **Yes and no**
 
 ![image](https://user-images.githubusercontent.com/89123268/202073941-ddf8a038-ed62-4de5-bf1b-bb686914015b.png)
 
@@ -90,26 +90,26 @@
 
 ![image](https://user-images.githubusercontent.com/89123268/202074240-2bfbc062-96ee-43e5-8b3e-6cdbae0cb7ea.png)
 
-- now we have 5 other regions that could potentially be our nearest neighbors -> so if we highlight these 5 regions in the actual space, it looks like this:
+- now we have 5 other regions that could potentially be our nearest neighbors -> so if we highlight these 5 regions in the actual space, it'll looks like this:
 
 ![image](https://user-images.githubusercontent.com/89123268/202074682-03f21827-199b-41b8-97ae-c2ce44e875a7.png)
 
-- so this tells us that if we input a song (that is at the red "x"), it'll recommend all the points in the 5 highlighted regions
-- the problem now, is that the recommendations are formed by just one tree 
+- so this tells us that if we input a song (that is at the red "x"), it'll recommend all of the songs in the 5 highlighted regions
+- the problem now, is that the song recommendations are formed by just one tree 
 
 ![image](https://user-images.githubusercontent.com/89123268/202076341-2eb8ede2-84d0-487f-aaca-bc29de838aa3.png)
-- for example, all 3 of these could be the trees that we get at the end in 3 separate cases... however, its always better to have multiple trees so that, by random chance, we won't be missing certain points
+- for example, all 3 of these could be the trees that we get at the end in 3 separate iterations... however, its always better to have multiple trees, so that, by random chance, we won't be missing certain songs
 - the more trees we build and take into consideration when making the decision for determining nearest neighbors, it becomes much more concrete
-- For example, lets say that the red "x" is the song that we put in -> we get the set of points in the purple region for nearest neighbors
-- then with these same set of points, we're going to run ANNOY again but this time we get random splits going in different directions then end up with the set of points in the yellow region
+- For example, lets say that the red "x" is the song that we input -> we get the set of songs in the purple region for nearest neighbors
+- then using the same inputted song in a different iteration, we're going to run ANNOY again but this time we get random splits going in different directions -> we end up with the set of points in the yellow region
 - Lastly, we do it a third time and yet again, we get different splits and end up with the set of points in the red region
-- so, lets say that we wanted to recommend 10 songs for a single song that a user inputs -> in our example, that would mean that there are 10 points/songs in each of the purple, yellow and red regions, giving us 30 total points/songs... however, some of the points/songs are overlapping -> so, what do we do?
+- so, lets say that we wanted to recommend 10 songs for a single song that a user inputs -> in our example, that would mean that there are 10 songs in each of the purple, yellow and red regions, giving us 30 songs total... however, some of the songs are overlapping -> so, what do we do?
 
 ![image](https://user-images.githubusercontent.com/89123268/202080143-cbdc1dab-ec19-4f6d-9b4c-45bab177d592.png)
-- Lets say that out of the 30 items/songs, 12 of them are duplicates -> now, we take the union and remove these duplicates -> we now only have 18 items/songs
-- now since there are only 18 points, we can actually compute raw distances for every single one of the 18 points from the query vector (aka, the song we want recommendations for)
+- Lets say that out of the 30 songs, 12 of them are duplicates -> now, we take the union and remove these duplicates -> we now only have 18 remaining
+- now since there are only 18 songs, we can actually compute raw distances for every single one of the 18 points from the query vector (aka, the song we want recommendations for)
 - once we do this, we can sort them in a ranked order of nearest neighbors/nearest distances:
-- we then find the nearest neighbors for all 18 points from the query point (inputted song) -> we can then eliminate the 8 furthest, giving us the closest 10 songs:
+- we then find the nearest neighbors for all 18 points from the query point/inputted song -> we then can eliminate the 8 furthest, giving us the closest 10 songs:
 
 ![image](https://user-images.githubusercontent.com/89123268/202080466-b605f10e-ea40-4dbd-a117-83274367e51e.png)
 
