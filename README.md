@@ -30,7 +30,7 @@
 - We would then want to flatten it so that we have a single vector of 1280 dimensions that represents a single WAV file
 - Now that its a much more compressed representation, we can find the cosign similarity between 2 sounds -> if the cosign similarity is higher, that means the 2 vectors/sounds are more "similar"
 - 2 examples given in the code were:
-birds2 vs birds2 = .906
+birds2 vs birds1 = .906
 jazz guitar vs guitar = .893
 - both have high cosign scores which makes sense because they are different types of the same thing
 
