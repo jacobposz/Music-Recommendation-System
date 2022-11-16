@@ -94,5 +94,16 @@
 
 ![image](https://user-images.githubusercontent.com/89123268/202074682-03f21827-199b-41b8-97ae-c2ce44e875a7.png)
 
-- so this tells us that if input a song (that is at the red "x"), it'll recommend all the points in the 5 highlighted regions
-g
+- so this tells us that if we input a song (that is at the red "x"), it'll recommend all the points in the 5 highlighted regions
+- the problem now, is that the recommendations are formed by just one tree 
+
+![image](https://user-images.githubusercontent.com/89123268/202076341-2eb8ede2-84d0-487f-aaca-bc29de838aa3.png)
+- for example, all 3 of these could the trees that we get at the end... however, its always better to have multiple trees so that, by random chance, we won't be missing certain points
+- the more trees we build and take into consideration when making the decision for determining nearest neighbors, it becomes much more concrete
+- For example, lets say that the red "x" is the song that we put in -> we get the set of points in the purple region for nearest neighbors
+- then with these same set of points, we're going to run ANNOY again but this time we get random splits going in different directions then end up with the set of points in the yellow region
+- Lastly, we do it a third time and yet again, we get different splits and end up with the set of points in the red region
+- so, lets say that we wanted to recommend 10 songs for a single song that a user inputs -> in our example, that would mean that there are 10 points/songs in each of the purple, yellow and red regions... however, some of the points/songs are overlapping -> so, what do we do?
+
+## ANNOY Query Structure
+
