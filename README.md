@@ -99,7 +99,7 @@ jazz guitar vs guitar = .893
 - For example, lets say that the red "x" is the song that we input -> we get the set of songs in the purple region for nearest neighbors
 - then using the same inputted song in a different iteration, we're going to run ANNOY again but this time we get random splits going in different directions -> we end up with the set of points in the yellow region
 - Lastly, we do it a third time and yet again, we get different splits and end up with the set of points in the red region
-- so, lets say that we wanted to recommend 10 songs for a single song that a user inputs -> in our example, that would mean that there are 10 songs in each of the purple, yellow and red regions, giving us 30 songs total... however, some of the songs are overlapping -> so, what do we do?
+- so, lets say that we wanted to recommend 10 songs for a single song that a user inputs -> in our example, that would mean that there are 10 songs in each of the purple, yellow and red regions, respectively, giving us 30 songs total... however, some of the songs are overlapping -> so, what do we do?
 
 ![image](https://user-images.githubusercontent.com/89123268/202080143-cbdc1dab-ec19-4f6d-9b4c-45bab177d592.png)
 - Lets say that out of the 30 songs, 12 of them are duplicates -> now, we take the union and remove these duplicates -> we now only have 18 remaining
