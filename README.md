@@ -48,7 +48,6 @@
 - we are now able to have a set of these byte vectors which we can pass into the recommendation engine (ANNOY)
 
 ## Recommendation Engine (ANNOY)
-- before getting into the next notebook
 - ANNOY uses approximate nearest neighbors for recommendations -> much faster than trying to do a brute force linear scan
 - This slide deck was made by the creator of ANNOY, Erik Bernhardsson:
 
