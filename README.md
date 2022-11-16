@@ -73,6 +73,13 @@
 ![image](https://user-images.githubusercontent.com/89123268/202073125-34704020-7803-40ef-bb39-89eb29ebf0f7.png)
 
 - the top point would be the start where all of your poins are in one embedding space then every node is where the space was split
-- we keep doing this until we end up at the circular leaf nodes which correspond to the sections above
+- we keep doing this until we end up at the circular leaf nodes which correspond to blocked off sections in the previous graph
 
 - now, lets say that you want find the nearest neighbors of a particular point... so what do you do?
+- lets say that the actual point in the embedding space lies somewhere here (in the white "x"):
+![image](https://user-images.githubusercontent.com/89123268/202073423-9ae54fb4-9a37-4c16-a22d-c5779a9cbeb4.png)
+
+- so, should we just traverse the tree which corresponds to that particular region/leaf in the decision tree?
+![image](https://user-images.githubusercontent.com/89123268/202073651-27605448-2eba-4923-8150-efe054d6b8ba.png)
+
+- Yes and no
