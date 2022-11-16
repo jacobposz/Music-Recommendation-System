@@ -12,7 +12,7 @@
 ## AudioSet Dataset
 ![image](https://user-images.githubusercontent.com/89123268/202052181-cc1138f3-4770-40d7-98c9-50edfc999e1b.png)
 
-- this entire json looking structure is just one sample video out of thousands in the entire collection (12,228 in total)
+- this entire json looking structure is just one sample video out of thousands in a dataset
 - the first "video_id" is basically a YouTube URL ID
 - "start_time_seconds" and "end_time_seconds" are the 2 time stamps (6-16 seconds); the 10 second chunk is the frame that is used
 - "labels" are tags that are given to the video (ex: muisc, guitar, talking, dog barking, etc.); these labels are stored in a list
