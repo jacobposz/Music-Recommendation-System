@@ -30,4 +30,9 @@
 - when you look at raw WAV music data, they're typically stored in kilohertz... for example a CD has 44.1 kilohertz which is equivalent to 44.1 thousand numbers being used to represent one second of data -> this is a lot of information -> that's why the output of 128 features is a lot less and also represents a lot more information -> this is the embedding -> the embeddings are pre-genertaed by the MAX audio embedding generator
 
 ## Generate EMbedding from WAV
-
+- This reads a wav file and gets the corresponding embeddings
+- We're going to fetch all of the wav files in demo assets (all the stuff in this repository; all of these wav files)
+- The goal here is to convert these wav files into the embeddings using the max audio embedding generator
+- So for every single WAV file, we're going to execute this curl request -> I'm passing the audio wav file to the URL (right here) -> its then going to run the prediction model through our embedding and when it generates an embedding, it's going to output it to a json file
+- Let's say we extract the embedding which is a list of lists where each list within that list is 128 characters of bytes -> we want the audio length to be cut at 10 seconds -> we want to make sure that every audio clip is the same size -> in this case, each list of lists will contain 10 lists and each of those 10 lists will be 128 characters for bytes
+- We then print out every call and encoding every one of those wav files that I printed above into an embedding
