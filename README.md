@@ -113,10 +113,13 @@ jazz guitar vs guitar = .893
 
 ![image](https://user-images.githubusercontent.com/89123268/202080466-b605f10e-ea40-4dbd-a117-83274367e51e.png)
 
-
-
-
-
+## Building a Recommender with ANNOY (Code Demonstration Video)
+- the objective is to get the top 10 recommendations for a piece of music
+- to run this notebook, we need the music_set.json file from the AudioSet processing.ipynb notebook 
+- first, we have to install 'annoy'
+- We then need to read the class labels from the csv file containing all of the categories and classes
+- Once the json file is read, we take the length of the dataset (2000 examples); we have 2000 pieces of music to play with
+- We want to create an ANNOY index where we now need to pass in the number of dimensions of each of our samples (1280) -> then for every single piece of music, we want to add it to the index (the samples we want to use to find the nearest neighbors of)
 
 
 
@@ -134,7 +137,6 @@ jazz guitar vs guitar = .893
 
 
 
-## Code demonstration video
 
 ## Video Recording
 
