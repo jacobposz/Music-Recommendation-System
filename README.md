@@ -47,3 +47,6 @@
 
 - now, lets print all of these into a cosign similarity matrix:
 ![image](https://user-images.githubusercontent.com/89123268/202065065-43a5bcde-d6b4-409a-a0d2-a77a81ab837d.png)
+
+- as we can see, the jazz guitar and regular guitar have a cosign similarity of .89 which is super high
+- on the other hand, 
