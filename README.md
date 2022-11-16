@@ -29,4 +29,7 @@
 - all of these files are stored in the form of tf records -> each of these records have exactly all of this information for 12,228 examples
 - when you look at raw WAV music data, they're typically stored in kilohertz... for example a CD has 44.1 kilohertz which is equivalent to 44.1 thousand numbers being used to represent one second of data -> this is a lot of information -> that's why the output of 128 features is a lot less and also represents a lot more information -> this is the embedding -> the embeddings are pre-genertaed by the MAX audio embedding generator
 
+## Embedding Generator
+complete later
 
+## Generate EMbedding from WAV
