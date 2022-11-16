@@ -4,6 +4,8 @@
 ## Problem
 Lets say we want to build a recommendation system for music based on a user's input... How do we do this? Where would we even start? Luckily, Erik Bernhardsson, a former Spotify employee, has already implemented a music recommendation system that uses an approximate nearest neighbors recommendation engine called ANNOY.
 
+This repo will go over the entire recommendation system, break down each part, and provide a code demonstration at the end.
+
 ## Overview
 
 ![image](https://user-images.githubusercontent.com/89123268/202051443-6bc35412-03af-4bdf-b09e-82d9c2a0a156.png)
