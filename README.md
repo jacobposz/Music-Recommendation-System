@@ -114,6 +114,9 @@ jazz guitar vs guitar = .893
 ![image](https://user-images.githubusercontent.com/89123268/202080466-b605f10e-ea40-4dbd-a117-83274367e51e.png)
 
 ## Building a Recommender with ANNOY (Code Demonstration Video)
+- Code Demonstration Video link: https://www.youtube.com/watch?v=Emuhan6UxJs
+
+
 - the objective is to get the top 10 recommendations for a piece of music
 - to run this notebook, we need the music_set.json file from the AudioSet processing.ipynb notebook 
 - first, we have to install 'annoy'
