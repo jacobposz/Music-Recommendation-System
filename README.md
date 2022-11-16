@@ -22,6 +22,8 @@
 - for example, if we have a 10 second piece of audio; we are chunking that 10 second piece of audio into 10 chunks of 1 second each and each of those seconds are encoded into an array of 128 numbers (also known as a byte array) -> this is repeated for each second of audio so we will have 10 lists at the end
 
 ## Generate EMbedding from WAV
+![image](https://user-images.githubusercontent.com/89123268/202083572-379baed0-dd80-4fd2-b7e8-f325092be46a.png)
+
 - This is going to read a wav file and get the corresponding embeddings
 - We're going to fetch all of the wav files in demo assets (all the stuff in this repository; all of these wav files)
 - The goal here is to convert these wav files into the embeddings using the max audio embedding generator
