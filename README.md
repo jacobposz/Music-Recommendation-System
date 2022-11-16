@@ -35,4 +35,11 @@
 - The goal here is to convert these wav files into the embeddings using the max audio embedding generator
 - So for every single WAV file, we're going to execute this curl request -> I'm passing the audio wav file to the URL (right here) -> its then going to run the prediction model through our embedding and when it generates an embedding, it's going to output it to a json file
 - Let's say we extract the embedding which is a list of lists where each list within that list is 128 characters of bytes -> we want the audio length to be cut at 10 seconds -> we want to make sure that every audio clip is the same size -> in this case, each list of lists will contain 10 lists and each of those 10 lists will be 128 characters for bytes
-- We then print out every call and encoding every one of those wav files that I printed above into an embedding
+- We then print out every call and encode every one of those wav files printed above into an embedding
+
+- now, since its a list of lists, each of those lists is 10x128 for every single sample -> We then flatten it so that we have a single vector of 1280 dimensions that represents a WAV file
+
+- Now that its a much more compressed representation, we can find the cosign similarity between 2 sounds -> if the cosign similarity is higher, that means the 2 vectors/sounds are more "similar"
+- lets test out a few values:
+- #birds2 vs birds1 = .906
+- #jazz guitar vs guitar = .893
