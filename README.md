@@ -10,6 +10,8 @@
 - The recommendation engine will then reccomend the closest values to the original piece of audio/song
 
 ## AudioSet Dataset
+![image](https://user-images.githubusercontent.com/89123268/202083469-dd7ba0ad-3f31-4c5f-9c2c-086780705f61.png)
+
 ![image](https://user-images.githubusercontent.com/89123268/202052181-cc1138f3-4770-40d7-98c9-50edfc999e1b.png)
 
 - this entire json looking structure is just one sample video out of thousands in a dataset
